@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+/*============================================ Common ============================================*/
+.container {
+    width: 1170px;
+    max-width: calc(100% - 24px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.logo h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: "Poppins";
+
+    color: #000958;
+}
+
+/*============================================ Header ============================================*/
+.header {
+    padding-top: 26px;
+
+    background: #fffaf5;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__list--link {
+    padding: 8px 16px;
+
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+
+    color: #5e6085;
+}
+
+.navbar__list--link:hover {
+    text-shadow: 0.5px 0 0 currentColor;
+}
+
+.nav__action--btn {
+    padding: 18px 32px;
+    border-radius: 99px;
+    border: 1px solid #000958;
+
+    text-align: center;
+
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+
+    background: transparent;
+    color: #000958;
+
+    cursor: pointer;
+}
+
+.nav__action--btn:hover {
+    opacity: 0.8;
+}
+
+/*============================================ Hero ============================================*/
+.hero {
+    margin-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__img {
+    margin-right: 283px;
+    position: relative;
+}
+
+.hero__img--big,
+.hero__img--small,
+.hero__img--info,
+.hero__pattern--small,
+.hero__pattern--circle {
+    position: absolute;
+}
