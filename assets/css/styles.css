@@ -103,6 +103,10 @@ button {
 
 .hero__media {
     display: flex;
+
+    position: relative;
+
+    padding-bottom: 94px;
 }
 
 .hero__img-wrap {
@@ -156,5 +160,74 @@ button {
     background: #faa7ad;
 }
 
-.hero__img--small {
+.hero__list {
+    position: absolute;
+    left: 129px;
+    bottom: 0;
+
+    width: 250px;
+    height: 156px;
+
+    padding: 18px 14px;
+    border-radius: 10px;
+
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-list-item__thumb {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 10px;
+
+    background: #fec23f;
+
+    object-fit: cover;
+}
+
+.hero-list-item__info {
+    margin-left: 10px;
+}
+
+.hero-list-item__title {
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+
+    color: #181e52;
+}
+
+.hero-list-item__skeleton {
+    width: var(--width, 118px);
+    height: 4px;
+
+    margin-top: 6px;
+    border-radius: 10px;
+
+    background: #000958;
+
+    opacity: 0.08;
+}
+
+.hero-list-item__separate {
+    display: block;
+
+    width: 222px;
+    height: 2px;
+
+    margin: 20px 0;
+    border-radius: 99px;
+
+    background: #f2f2f2;
+}
+
+.hero-list-item:nth-of-type(2) .hero-list-item__thumb {
+    background: #c6e2fa;
 }
