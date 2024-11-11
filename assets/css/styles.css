@@ -828,8 +828,6 @@ button {
 
     border-radius: 130px;
     margin: 0 16px;
-
-    overflow: hidden;
 }
 
 .staff-item__img-wrap::before {
@@ -847,12 +845,54 @@ button {
     background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
 }
 
+.staff-item__img-wrap::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.staff-item:nth-child(1) .staff-item__img-wrap::after {
+    content: url(../img/staff-decor-01.svg);
+}
+
+.staff-item:nth-child(2) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff-item:nth-child(2) .staff-item__img-wrap::after {
+    content: url(../img/staff-decor-02.svg);
+}
+
+.staff-item:nth-child(3) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff-item:nth-child(3) .staff-item__img-wrap::after {
+    content: url(../img/staff-decor-03.svg);
+}
+
+.staff-item:nth-child(4) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff-item:nth-child(4) .staff-item__img-wrap::after {
+    content: url(../img/staff-decor-04.svg);
+}
+
+.staff-item:nth-child(even) .staff-item__img-wrap::after {
+    bottom: initial;
+    top: 19px;
+}
+
 .staff-item__img {
     display: block;
 
     position: relative;
 
     width: 100%;
+
+    border-radius: inherit;
 
     z-index: 1;
 }
