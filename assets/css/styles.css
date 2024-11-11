@@ -62,9 +62,9 @@ button {
 }
 
 .btn--primary {
-    color: #fff;
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .btn__icon {
@@ -947,6 +947,10 @@ button {
     background: #fff6ed;
 }
 
+.pricing__container {
+    width: 994px;
+}
+
 .pricing__heading,
 .pricing__desc {
     text-align: center;
@@ -1037,4 +1041,85 @@ button {
     position: absolute;
     top: -10px;
     right: -112px;
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+
+    margin-top: 56px;
+}
+
+.pricing-item {
+    padding: 30px 28px;
+    border-radius: 20px;
+
+    background: #fff;
+}
+
+.pricing-item__type {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #ff5b2e;
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+
+    color: #3f4065;
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+
+    font-family: Sora;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03;
+
+    color: #000958;
+}
+
+.pricing-iten__btn {
+    --height: 44px;
+
+    margin-top: 22px;
+
+    width: 100%;
+
+    border: 1px solid rgba(255, 91, 46, 0.6);
+
+    color: #ff5b2e;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing__item-item {
+    display: flex;
+
+    margin-top: 18px;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+
+    color: #656689;
+}
+
+.pricing__item-item::before {
+    content: url(../icon/price-check.svg);
+
+    margin-right: 12px;
 }
