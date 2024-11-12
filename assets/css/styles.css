@@ -1139,6 +1139,10 @@ button {
     column-gap: 44px;
 }
 
+.review__content {
+    overflow: hidden;
+}
+
 .review__control {
     display: flex;
     align-items: center;
@@ -1163,10 +1167,25 @@ button {
     cursor: pointer;
 }
 
+.review__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.review-item__content {
+    margin-top: 28px;
+}
+
+.review__list {
+    display: flex;
+}
+
 .review-item {
     display: flex;
     align-items: center;
     column-gap: 115px;
+    flex-shrink: 0;
+
+    width: 100%;
 }
 
 .review-item__media {
