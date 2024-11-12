@@ -1290,3 +1290,33 @@ button {
 
     background: #ff5b2e;
 }
+
+/*============================================ Blog ============================================*/
+.blog {
+    padding: 65px 0 130px;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    margin-right: 73px;
+}
+
+.blog__desc {
+    width: 350px;
+
+    margin-top: 0;
+}
+
+.blog__cta {
+    min-width: 182px;
+
+    border-color: #ff5b2e99;
+    margin-top: 24px;
+
+    color: #ff5b2e;
+}
